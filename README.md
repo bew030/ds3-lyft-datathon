@@ -16,11 +16,49 @@ To get more information about the organization of the Datathon, click [here](htt
 
 # An Overview on the Data 
 
-[![Alt text](https://img.youtube.com/vi/j58cDTEEIx0&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=j58cDTEEIx0&feature=youtu.be)
+# Using the Data to Answer Questions 
 
-https://www.youtube.com/watch?v=j58cDTEEIx0&feature=youtu.be 
-# 
+__What are some general patterns of traffic?__
 
+As most of us have experienced, San Diego has its fair share of bad traffic. As a
+big overview, we decided to first look at the traffic trends of San Diego over time. We
+utilized an additional GeoDataFrame of roads that we downloaded and merged it with
+the traffic dataset and then organized it by date. Afterwards, we created an animation of maps over time that would help give us a general idea of the trends of traffic:
+
+<p align="center">
+  <img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/final_5d9bdd0264e738001470f299_973971.gif" />
+</p>
+<p align="center">
+  <i> This is a naive timelapse of the routes that have the largest amount of traffic in San Diego. To view the video, click <a href="https://www.youtube.com/watch?v=j58cDTEEIx0&feature=youtu.be"> here </a> </i>
+</p>
+
+There are immediately some interesting things that you can notice from viewing
+the animation. The general trend as time passes is that traffic becomes more and more
+abundant as we start to notice more and more roads with traffic. We also noticed a few
+sudden spurts of days where there is a lot of traffic covering all of California. This makes
+sense, as traffic tends to create more traffic, and because there are many areas with
+traffic during certain days, there’s a high chance that the traffic has an exponential effect.
+
+This leads to more questions. There are random spurts of days where
+there will be loads of traffic spread across all of California, and there are certain areas
+where there are lots of traffic. Why is this? What are the days that have those spurts?
+With this new development of questions, we continued to explore.
+
+__What's the relationship between traffic and time?__
+After finding the random spurts of traffic activity in the geographical data, we
+wanted to find out if there was a correlation between the day of the week and the
+amount of traffic. So using this data set, we plotted a histogram of the average amount of
+cars per day of the week to see if the day of the week was a deciding factor towards why
+there traffic was present.
+
+# INSERT IMAGE HERE *
+
+
+__What's the relationship between area and travel related injuries?__
+
+# Further Analysis: A Pacific Beach Collision Case Study 
+
+# What's Next? 
 
 # Badges 
 [![GitHub issues](https://img.shields.io/github/issues/bew030/ds3-lyft-datathon?color=purple)](https://github.com/bew030/ds3-lyft-datathon/issues)
