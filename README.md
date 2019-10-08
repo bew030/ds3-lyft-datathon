@@ -51,12 +51,34 @@ amount of traffic. So using this data set, we plotted a histogram of the average
 cars per day of the week to see if the day of the week was a deciding factor towards why
 there traffic was present.
 
-# INSERT IMAGE HERE *
+<p align="center">
+	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/day_vs_average_cars.png"/>
+</p>
+
+<p align="center">
+	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/injuries_deaths_per_day.png"/>
+</p>
 
 
 __What's the relationship between area and travel related injuries?__
 
+<p align="center">
+	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/injuries_deaths_choropleths.png"/>
+</p>
+
 # Further Analysis: A Pacific Beach Collision Case Study 
+
+<p align="center">
+	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/collisions_in_each_beat.png"/>
+</p>
+
+<p align="center">
+	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/top_10_beats.png"/>
+</p>
+
+<p align="center">
+	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/random_collisions_samples.png"/>
+</p>
 
 # What's Next? 
 
