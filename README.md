@@ -16,6 +16,11 @@ To get more information about the organization of the Datathon, click [here](htt
 
 # An Overview on the Data 
 
+[![Alt text](https://img.youtube.com/vi/j58cDTEEIx0&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=j58cDTEEIx0&feature=youtu.be)
+
+https://www.youtube.com/watch?v=j58cDTEEIx0&feature=youtu.be 
+# 
+
 
 # Badges 
 [![GitHub issues](https://img.shields.io/github/issues/bew030/ds3-lyft-datathon?color=purple)](https://github.com/bew030/ds3-lyft-datathon/issues)
