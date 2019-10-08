@@ -22,6 +22,10 @@ __What are some general patterns of traffic?__
 <p align="center">
   <img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/final_5d9bdd0264e738001470f299_973971.gif" />
 </p>
+<p align="center">
+  <i> This is a naive timelapse of the routes that have the largest amount of traffic in San Diego. To view the video, click <a href="https://www.youtube.com/watch?v=j58cDTEEIx0&feature=youtu.be"> here </a> </i>
+</p>
+
 
 __What's the relationship between traffic and time?__
 
