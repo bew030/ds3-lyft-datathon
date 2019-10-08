@@ -16,11 +16,20 @@ To get more information about the organization of the Datathon, click [here](htt
 
 # An Overview on the Data 
 
-[![Alt text](https://img.youtube.com/vi/j58cDTEEIx0&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=j58cDTEEIx0&feature=youtu.be)
+# Using the Data to Answer Questions 
 
-https://www.youtube.com/watch?v=j58cDTEEIx0&feature=youtu.be 
-# 
+__What are some general patterns of traffic?__
+<p align="center">
+  <img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/final_5d9bdd0264e738001470f299_973971.gif" />
+</p>
 
+__What's the relationship between traffic and time?__
+
+__What's the relationship between area and travel related injuries?__
+
+# Further Analysis: A Pacific Beach Collision Case Study 
+
+# What's Next? 
 
 # Badges 
 [![GitHub issues](https://img.shields.io/github/issues/bew030/ds3-lyft-datathon?color=purple)](https://github.com/bew030/ds3-lyft-datathon/issues)
