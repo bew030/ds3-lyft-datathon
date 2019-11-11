@@ -16,6 +16,36 @@ To get more information about the organization of the Datathon, click [here](htt
 
 # An Overview on the Data 
 
+We were fortunate to be given relatively clean datasets to be working with. We were given three csvs: one involving the traffic count, one that was a dictionary describing the traffic count csv, and one that had data on collisions that occurred in San Diego. We did a general data clean which included changing the columns to the proper data types, fixing and cleaning missing data (by either removing erroneous data or replacing missing data with appropriate values to make future calculations easier), and general descriptive analysis to understand what kind of data we were working with. 
+
+Our cleaned traffic dataset looked like this: 
+
+<p align="center">
+<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/cleaned_traffic_count.png" />
+</p>
+
+To understand what each column means, refer to this dataframe: 
+
+<p align="center">
+<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/dictionary_traffic_count.png" />
+</p>
+
+This is the cleaned collisions dataframe: 
+
+<p align="center">
+<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/collisions.png" />
+</p>
+
+Along with that, we decided to use a few additional datasets to help visualize traffic and collisions. Because San Diego fortunately is very data oriented, we were able to find shape files for both the [police beats](https://data.sandiego.gov/datasets/police-beats/) and the [road lines](https://data.sandiego.gov/datasets/roads-lines/). We were able to use GeoDataFrames such as this beats GeoDataFrame:  
+
+<p align="center">
+<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/beats_example.png" />
+</p>
+
+to help us visualize the data given to us. 
+
+By merging together the roads GeoDataFrame and the traffic dataframe on the road names we were able to visualize which roads had traffic on each day. Along with that, we were able to use the police beats GeoDataFrame and the collisions dataframe to create chloropleths to help us visualize areas of interest.
+
 # Using the Data to Answer Questions 
 
 __What are some general patterns of traffic?__
