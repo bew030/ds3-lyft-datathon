@@ -81,19 +81,49 @@ At this point, we’ve noticed that there are a lot of outliers within the data 
 
 # Further Analysis: A Pacific Beach Collision Case Study 
 
+From the visualization generated through the choropleth graphs and other plots, we saw that there was an extremely high number of collisions in one particular beat: beat 122.
+
 <p align="center">
 	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/collisions_in_each_beat.png"/>
 </p>
+
+Looking at the 10 beats with the most collisions below, we see that Beat 122 has significantly more collisions than the 9 other beats.
 
 <p align="center">
 	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/top_10_beats.png"/>
 </p>
 
+From the choropleth, we determined that Beat 122 was Pacific Beach, which had the most collisions of all the beats in the dataset. We thought that beat 122, which had the highest number of collisions, would have a higher average of combined injuries and deaths. We asked 
+
+<p align="center">
+	<i>Due to having the highest number of collisions, does Pacific Beach (Beat 122) have a significantly higher average of combined injuries and deaths than other beats, which do not have as many collisions?</i>
+</p>
+
+This led to our hypothesis test:
+
+<p align="center">
+	<b>Null Hypothesis:</b> Collisions in Pacific Beach (Beat 122) will not have a significantly higher average of combined injuries and deaths than the average combined injuries and deaths of collisions in the other beats of San Diego<br><br><b>Alternative Hypothesis:</b> Collisions in Pacific Beach (Beat 122) have higher averages of combined injuries and death than collisions in other beats of San Diego.
+</p>
+
+The statistic we are looking at is the average of the sum of the number of injured and killed for each collision, which we will define as ‘average hurt’. The observed average hurt in Pacific Beach (Beat 122) was about 0.584416 people hurt each collision.
+
+We then took the average hurt of <b>50,000 samples</b> of the clean collision dataset, each of size 1155, the amount of collisions in Pacific Beach (Beat 122), in order to see if the average hurt in Pacific Beach (Beat 122) was <b>significantly higher</b> than the average hurt of a random sample of collisions of the same size.
+
 <p align="center">
 	<img src="https://github.com/bew030/ds3-lyft-datathon/blob/master/images/random_collisions_samples.png"/>
 </p>
 
+In the graph above, the red dot represents the observed average hurt in Pacific Beach (Beat 122) and the blue histogram represents the average hurt values of the 50,000 random samples of the collision dataset. We can see that the observed average hurt value is right in the middle of the unimodal histogram’s large peak. Calculating a <b>p-value of 0.65148</b> further confirms that our observed average hurt in Pacific Beach (Beat 122) is not significantly higher, like we hypothesized.
+
+Therefore, we <b>accept the null hypothesis</b> that the average of combined injuries and deaths in Pacific Beach (Beat 122) is not significantly higher than the average combined injuries and deaths of collisions in the other beats of San Diego. From this conclusion, it would be reasonable to think that a high amount of collisions does not necessarily mean that more people will be injured or killed on average.
+
 # What's Next? 
+
+Based on our hypothesis test, we can conclude that just because an area has the most collisions, it doesn’t necessarily mean that area is specifically dangerous, in terms of collision-related deaths and injuries. But our analysis and hypothesis test still leaves some questions unanswered, and even leads to other questions. Are there any reasons why those days specifically are an issue? Why are areas around Pacific Beach not as prone to injuries like we’d think? How come other areas around I-15 or Mira Mesa don’t have nearly as many casualties? There are still many different questions that can be explored.
+
+There were also many issues with the data that would ideally get resolved if we had the opportunity to analyze this data in the future. There were multiple areas in the different data sets, such as missing data, rounded off data (times and dates being rounded), and a variety of other messy data inputs. While we considered these different things and in general these were relatively negligible (due to our large dataset), it would be interesting to determine why these certain areas or data points were missing. We also felt that the traffic data didn’t provide enough data regarding each of the roads, as it would only have data on a few roads for each day (most likely due to a specific definition of traffic or a specific threshold of number of cars). If data could be collected on the total number of cars on each road per day, this could significantly help the traffic collision analysis.
+
+Overall, while we’ve taken a large step in analyzing this data, there’s still much to explore. Traffic will always be a large part of transportation, but with the strength of Data Science, large strides can be made to make traffic a thing of the past.
 
 # Badges 
 [![GitHub issues](https://img.shields.io/github/issues/bew030/ds3-lyft-datathon?color=purple)](https://github.com/bew030/ds3-lyft-datathon/issues)
